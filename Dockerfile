@@ -3,7 +3,7 @@ FROM ubuntu:latest
 ENV KAFKA_HOME /opt/kafka
 ENV KAFKA_USER kafka 
 WORKDIR /opt
-ADD ./start-kafka.sh C:/Users/N.Pastore/kafka
+ADD C:/Users/N.Pastore/kafka/start-kafka.sh C:/Desktop/test/
 
 # install java + others
  RUN apt-get update  && apt-get install -y \
@@ -28,4 +28,4 @@ EXPOSE 9092  \
  mv kafka_2.12-2.4.0 $KAFKA_HOME
 
 ENTRYPOINT [ "start-kafka.sh" ]
-CMD ["C:/Users/N.Pastore/kafka"]
+CMD ["C:/Users/N.Pastore/kafka/start-kafka.sh"]
