@@ -3,7 +3,7 @@ FROM ubuntu:latest
 ENV KAFKA_HOME /opt/kafka
 ENV KAFKA_USER kafka 
 WORKDIR /opt
-ADD C:/Users/N.Pastore/kafka/start-kafka.sh C:/Desktop/test/
+ADD start-kafka.sh C:/Desktop/test/
 
 # install java + others
  RUN apt-get update  && apt-get install -y \
