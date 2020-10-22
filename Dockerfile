@@ -28,4 +28,4 @@ EXPOSE 9092  \
  mv kafka_2.12-2.4.0 $KAFKA_HOME
 
 ENTRYPOINT [ "start-kafka.sh" ]
-CMD ["/opt/kafka/scripts/start-kafka.sh"]
+CMD ["C:/Users/N.Pastore/kafka"]
